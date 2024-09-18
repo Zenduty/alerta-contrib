@@ -45,5 +45,5 @@ DASHBOARD_ID=d9f75dbb0b5643268a993159207b98a1
 References
 ----------
 
-  * Zenduty Integration Docs: [[https://developer.pagerduty.com/documentation/integration/events/](https://www.zenduty.com/docs/alerta-integration/)](https://www.zenduty.com/docs/alerta-integration/)
+  * Zenduty Integration Docs: (https://www.zenduty.com/docs/alerta-integration/)](https://www.zenduty.com/docs/alerta-integration/)
 

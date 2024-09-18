@@ -8,7 +8,7 @@ Installation
 ------------
 
 To install remotely from GitHub run:
-1. In Alerta-Api bash
+### Step 1: Install in Alerta-Api
     ```pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty```
 2. In Alerta-Web bash
     ``` /venv/bin/pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty```

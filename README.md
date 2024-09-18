@@ -9,12 +9,13 @@ Installation
 
 To install remotely from GitHub run:
 ### Step 1: Install in Alerta-Api
-    ```python 
-    pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty
-    ```
-2. In Alerta-Web bash
-    ``` python
-    /venv/bin/pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty ```
+```python
+pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty
+```
+### Step 2: In Alerta-Web bash
+```python
+/venv/bin/pip install git+https://github.com/Zenduty/alerta-contrib.git#subdirectory=plugins/zenduty
+```
 
 Note: If Alerta is installed in a python virtual environment then plugins
 need to be installed into the same environment for Alerta to dynamically

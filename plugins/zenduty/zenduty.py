@@ -13,7 +13,7 @@ LOG = logging.getLogger("alerta.plugins.zenduty")
 DASHBOARD_ID= os.environ.get(
     'DASHBOARD_ID') or app.config['DASHBOARD_ID']
 
-ZENDUTY_EVENTS_URL = f"https://alpha.zendutylabs.com/api/appsync/webhook/{DASHBOARD_ID}/"
+ZENDUTY_EVENTS_URL = f"https://www.zenduty.com/api/appsync/webhook/{DASHBOARD_ID}/"
 
 
 class TriggerEvent(PluginBase):

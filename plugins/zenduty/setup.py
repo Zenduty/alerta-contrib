@@ -9,7 +9,7 @@ setup(
     url="https://github.com/Zenduty/alerta-contrib",
     license="MIT",
     author="Zenduty",
-    author_email="michael@zenduty.com",
+    author_email="contact@zenduty.com",
     packages=find_packages(),
     py_modules=["zenduty"],
     install_requires=["requests"],

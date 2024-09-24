@@ -4,16 +4,16 @@ import os
 
 import requests
 from alerta.plugins import PluginBase
+
 try:
     from alerta.plugins import app  # alerta >= 5.0
 except ImportError:
     from alerta.app import app  # alerta < 5.0
 
 LOG = logging.getLogger("alerta.plugins.zenduty")
-DASHBOARD_ID= os.environ.get(
-    'DASHBOARD_ID') or app.config['DASHBOARD_ID']
+ZENDUTY_CONNECTION_ID = os.environ.get("ZENDUTY_CONNECTION_ID") or app.config["ZENDUTY_CONNECTION_ID"]
 
-ZENDUTY_EVENTS_URL = f"https://www.zenduty.com/api/appsync/webhook/{DASHBOARD_ID}/"
+ZENDUTY_EVENTS_URL = f"https://www.zenduty.com/api/appsync/webhook/{ZENDUTY_CONNECTION_ID}/"
 
 
 class TriggerEvent(PluginBase):
@@ -65,7 +65,7 @@ class TriggerEvent(PluginBase):
             raise RuntimeError("Zenduty connection error: %s" % e)
 
         LOG.debug("Zenduty response: %s - %s", r.status_code, r.text)
-    
+
     def post_action(self, alert, action, text, **kwargs):
         LOG.debug("status_change")
         if action not in ["ack", "assign", "closed", "expired"]:

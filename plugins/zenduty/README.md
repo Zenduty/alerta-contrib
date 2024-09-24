@@ -28,18 +28,18 @@ Add `zenduty` to the list of enabled `PLUGINS` in `alertad.conf` server
 configuration file and set plugin-specific variables either in the
 server configuration file or as environment variables.
 
-DASHBOARD_ID = Tenant ID from zenduty account connection
+ZENDUTY_CONNECTION_ID = Tenant ID from zenduty account connection
 
 ```python
 PLUGINS=zenduty
-DASHBOARD_ID = ''
+ZENDUTY_CONNECTION_ID = ''
 ```
 
 **Example**
 
 ```python
 PLUGINS=reject,heartbeat,blackout,zenduty
-DASHBOARD_ID=d9f75dbb0b5643268a993159207b98a1
+ZENDUTY_CONNECTION_ID=d9f75dbb0b5643268a993159207b98a1
 ```
 
 References
